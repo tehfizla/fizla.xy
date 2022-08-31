@@ -1,0 +1,78 @@
+body {
+    background-color: #3d4b55;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.wave {
+   position: relative;
+height: 100%;
+}
+  
+main .clickables {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.background {
+  overflow: hidden;
+}
+
+iframe.card {
+  border: none;
+  background-color: rgba(0,0,0.1);
+}
+
+main .clickables a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 5px;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: url("cursor.png") 32 32, auto;
+}
+
+#wave {
+    position: absolute;
+    bottom: -50;
+    left: -15;
+    width: 110%;
+}
+
+.profile:hover {
+  height: 214px
+}
+
+.profile {
+    margin: 10px 0;
+    height: 90px;
+    border-radius: 16px;
+    overflow: hidden;
+    width: max-content;
+    margin: 0 auto;
+    transition: 300ms ease-in-out;
+    position: relative;
+}
+
+a.cardLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
