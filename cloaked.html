@@ -8,9 +8,24 @@
          <button onclick="openGame('fizla.xyz/3dcity')">3dcity</button>
          <button onclick="openGame('scorzy.github.io/IdleSpace/#/home/res/m')">Idle Space</button>
          <button onclick="openGame('benvanik.github.io/blk-game/client/game.html?host=local')">minceraft</button>
-         <
+        <p></p>
          <button onclick="portaproxy()">Portaproxy</button>
+        <p></p>
+        <button onclick="youtubeplayer()">youtube video cloak</button>
          <script>
+            function youtubeplayer() {
+            
+                var win = window.open();
+                var f = win.document.createElement("iframe");
+                window.focus();
+                var url = win.prompt("enter video id from youtube", "https://youtube.com/embed/PUTVIDEOIDHERE");
+                if (!url) return;
+                win.document.body = win.document.createElement("body");
+                f.style.width = "100vw";
+                f.style.height = "100vh";
+                win.document.body.appendChild(f);
+                f.src = url
+            }
             function portaproxy() {
                 var win = window.open();
                 var f = win.document.createElement("iframe");
