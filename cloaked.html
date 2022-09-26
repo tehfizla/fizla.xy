@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="x-icon" href="saul.png">
+        <title>Internet Privacy on top</title>
+    </head>
+    <body>
+
+         <button onclick="openGame('fizla.xyz/3dcity')">3dcity</button>
+         <button onclick="openGame('scorzy.github.io/IdleSpace/#/home/res/m')">Idle Space</button>
+         <button onclick="openGame('benvanik.github.io/blk-game/client/game.html?host=local')">minceraft</button>
+         <
+         <button onclick="portaproxy()">Portaproxy</button>
+         <script>
+            function portaproxy() {
+                var win = window.open();
+                var f = win.document.createElement("iframe");
+                window.focus();
+                var url = win.prompt("enter url", "https://");
+                if (!url) return;
+                win.document.body = win.document.createElement("body");
+                f.style.width = "100vw";
+                f.style.height = "100vh";
+                win.document.body.appendChild(f);
+                f.src = url
+            }
+            function openGame(link) {
+               var win = window.open()
+               var url = "https://"+link
+               var iframe = win.document.createElement('iframe')
+               iframe.style.height = "100%";
+               iframe.style.width = "100%";
+               iframe.style.border = "none";
+               iframe.src = url
+               win.document.body.appendChild(iframe)
+            }
+
+         </script>
+
+    </body>
+</html>
