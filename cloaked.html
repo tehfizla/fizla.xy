@@ -18,13 +18,13 @@
                 var win = window.open();
                 var f = win.document.createElement("iframe");
                 window.focus();
-                var url = win.prompt("enter video id from youtube", "https://youtube.com/embed/PUTVIDEOIDHERE");
+                var url = win.prompt("enter video id from youtube", "put video id here");
                 if (!url) return;
                 win.document.body = win.document.createElement("body");
                 f.style.width = "100vw";
                 f.style.height = "100vh";
                 win.document.body.appendChild(f);
-                f.src = url
+                f.src = "https://youtube.com/embed/"+url
             }
             function portaproxy() {
                 var win = window.open();
