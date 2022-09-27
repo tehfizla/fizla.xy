@@ -1,2 +1,2 @@
-[fizla.xyz](https://fizla.xyz]
+[fizla.xyz](https://fizla.xyz)
 source
