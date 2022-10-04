@@ -30,8 +30,9 @@ req.open('GET', 'https://raw.githubusercontent.com/DarkSnakeGang/GoogleSnakeCust
 req.onload = function() {
     eval(this.responseText + 'snake.more_menu();');
 };
+              
 req.send();
-                                         
+            }                           
 function youtubeplayer() {
             
                 var win = window.open();
