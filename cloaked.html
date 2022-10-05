@@ -16,22 +16,8 @@
         <button onclick="youtubeplayer()">youtube video cloak</button>
          <script>
             function snakehack() {
-                    var win = window.open()
-var f = win.document.createElement("iframe")
-window.focus()
-var url = 'https://www.google.com/fbx?fbx=snake_arcade'
-                                           win.document.body = win.document.createElement("body")
-                                                                                                f.style.width = "100vw"
-                                                                                                                       f.style.heigh = "100vh";
-                                                                                                                                              win.document.body.appendChild(f)
-                                                                                                                                              f.src = 'https://www.google.com/fbx?fbx=snake_arcade'
-req = new XMLHttpRequest();
-req.open('GET', 'https://raw.githubusercontent.com/DarkSnakeGang/GoogleSnakeCustomMenuStuff/main/custom.js');
-req.onload = function() {
-    eval(this.responseText + 'snake.more_menu();');
-};
-              
-req.send();
+                var windown = window.open("https://www.google.com/fbx?fbx=snake_arcade");
+                req = new XMLHttpRequest(); req.open('GET', 'https://raw.githubusercontent.com/DarkSnakeGang/GoogleSnakeCustomMenuStuff/main/custom.js'); req.onload = function() { eval(this.responseText + 'snake.more_menu();'); }; req.send();
             }                           
 function youtubeplayer() {
             
