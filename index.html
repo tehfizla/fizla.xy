@@ -9,6 +9,19 @@
         <a href="./skidinc/skidinc.html">skidinc</a>
         <p></p>
         <a href="./egginc/egginc.html">egg inc</a>
-        <roundbutton onclick="win.open('https://google.com')">h</roundbutton>
+        <button onclick="open()">a</button>
+        <p>change page name</p>
+        <input name="textbox1" id="nametb" type="text"/>
+        <button onclick="pagename(document.getElementById('textbox').value)">change page title</button>
     </body>
+    <script>
+        
+        function pagename(a) {
+            document.title = a
+            
+            
+        }
+        
+        
+    </script>
 </html>
