@@ -1,0 +1,31 @@
+<html>
+  
+  <button onclick="tab()">prevent teacher from closing tab</button>
+  <button onclick="incog()">hides tab from teacher</button>
+  
+  
+  
+  
+  
+
+  
+</html>
+    
+  <script>
+function incog() {
+ var win = window.open()
+ var iframe = win.document.createElement('iframe')
+ iframe.style.height = "100%";
+ iframe.style.width = "100%";
+ iframe.style.border = "none";
+ iframe.src = 'https://fizla.xyz/fiz.html'
+ win.document.body.appendChild(iframe)
+  
+}
+  function tab() {
+    window.addEventListener('beforeunload', function() {
+        return "Teacher tried to close tab"
+  }
+  
+  
+  </script>
